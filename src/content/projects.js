@@ -12,7 +12,7 @@ export default [
         launchable: true,
         links: {
             launch: 'https://www.nailpalacescv.com',
-            github: 'https://www.github.com/mikechoi1'
+            github: 'https://github.com/mikechoi1/nail-palace-website'
         }
     },
     {

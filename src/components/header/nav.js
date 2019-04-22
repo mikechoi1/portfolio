@@ -5,14 +5,17 @@ import { Link } from 'react-scroll';
 import './nav.css';
 
 export default class Nav extends React.Component {
-    state = {
-        color: ''
-    };
+    
     propColor = this.props.colorTheme;
+    
     hexColors = {
         green: '#21ce99',
         purple: '#836EEF',
         blue: '#196DEA'
+    };
+    state = {
+        color: '',
+        brandColor: this.hexColors[this.propColor]
     };
 
     hero = document.querySelector(".hero");
@@ -23,10 +26,10 @@ export default class Nav extends React.Component {
         this.nav = document.querySelector(".navbar");
         window.addEventListener('scroll', () => {
             if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 3) {
-                this.setState({color: this.hexColors[this.propColor]})
+                this.setState({color: this.hexColors[this.propColor], brandColor: 'white'});
             }
             else {
-                this.setState({color: ''})
+                this.setState({color: '', brandColor: this.hexColors[this.propColor]});
             }
         })
     }
@@ -36,12 +39,18 @@ export default class Nav extends React.Component {
         if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 3) {
             this.setState({color: this.hexColors[this.propColor]})
         }
+        else {
+            this.setState({brandColor: this.hexColors[this.propColor]});
+        }
         this.props.green();
     }
     purpleTheme = () => {
         this.propColor = 'purple';
         if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 3) {
             this.setState({color: this.hexColors[this.propColor]})
+        }
+        else {
+            this.setState({brandColor: this.hexColors[this.propColor]});
         }
         this.props.purple();
     }
@@ -50,13 +59,16 @@ export default class Nav extends React.Component {
         if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 3) {
             this.setState({color: this.hexColors[this.propColor]})
         }
+        else {
+            this.setState({brandColor: this.hexColors[this.propColor]});
+        }
         this.props.blue();
     }
     
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light fixed-top container py-3" style={{backgroundColor: this.state.color}}>
-                <Link className="navbar-brand cursor-pointer" to="home" smooth><i className="fas fa-battery-full"></i></Link>
+                <Link className="navbar-brand cursor-pointer" to="home" smooth><i className="fas fa-battery-full" style={{color: this.state.brandColor}} ></i></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

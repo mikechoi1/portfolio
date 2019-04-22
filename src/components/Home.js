@@ -43,7 +43,7 @@ class Home extends React.Component {
         return this.roles
             .filter((role, index) => index === typeIndex)
             .map((role) => {
-                console.log(role);
+                // console.log(role);
                 return (
                     <Typing className={`${this.props.colorTheme} typing-inline typing-font`} cursorClassName={`${this.props.colorTheme}`} key={role} startDelay={startDelay} onFinishedTyping={() => {this.playNext()}}>
                         <Typing.Reset count={1} />
