@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mikechoi1.github.io/portfolio",
+  "homepage": "https://michaelchoi.tech",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

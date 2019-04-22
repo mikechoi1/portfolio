@@ -9,37 +9,22 @@
     box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05),
       0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+
+    margin-bottom: 30px;
 }
 .project-image {
-    width: 60%;
-    position: absolute !important;
-    top: 0;
-    left: 0;
+    display: none;
+}
+.project-background {
+    display: none;
 }
 .transparent-background:after {
-    content: " ";
-    display: block;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
-.project-background {
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    height: 101%;
-    width: 98%;
-    background: url('../../../images/project-background.png');
-    background-size: cover;
-    background-position: left;
+    display: none;
 }
 .project-content {
-    padding: 60px;
-    width: 67%;
-    z-index: 2;
+    width: 100%;
+    padding: 35px;
+    box-sizing: border-box;
 }
 h3 {
     font-weight: 500;
@@ -52,4 +37,53 @@ p {
     margin-bottom: 30px;
     line-height: 27px;
     /* color: #5d5d5d; */
+}
+@media only screen and (min-width: 1024px) {
+    .project-card {
+        margin-bottom: 60px;
+    }
+    .project-image {
+        display: block;
+        width: 83%;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+    }
+    .transparent-background:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .project-background {
+        display: block;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        height: 101%;
+        width: 112%;
+        background: url('../../../images/project-background.png');
+        background-size: cover;
+        background-position: left;
+    }
+    .project-content {
+        padding: 60px;
+        width: 75%;
+        z-index: 2;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .project-image {
+        width: 60%;
+    }
+    .project-content {
+        width: 67%;
+    }
+    .project-background {
+        width: 98%;
+    }
 }
