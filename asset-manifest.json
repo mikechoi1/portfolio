@@ -1,0 +1,17 @@
+{
+  "main.css": "/portfolio/static/css/main.fad7887e.chunk.css",
+  "main.js": "/portfolio/static/js/main.64a15319.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.64a15319.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
+  "static/js/2.96dd47ad.chunk.js": "/portfolio/static/js/2.96dd47ad.chunk.js",
+  "static/js/2.96dd47ad.chunk.js.map": "/portfolio/static/js/2.96dd47ad.chunk.js.map",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.877aea77ca5b1bd0ce2e8d46835cb081.js": "/portfolio/precache-manifest.877aea77ca5b1bd0ce2e8d46835cb081.js",
+  "service-worker.js": "/portfolio/service-worker.js",
+  "static/css/main.fad7887e.chunk.css.map": "/portfolio/static/css/main.fad7887e.chunk.css.map",
+  "static/media/cat.png": "/portfolio/static/media/cat.a6ffab9c.png",
+  "static/media/flower.jpeg": "/portfolio/static/media/flower.de24c193.jpeg",
+  "static/media/nailpalace.png": "/portfolio/static/media/nailpalace.e6190f85.png",
+  "static/media/projectcard.css": "/portfolio/static/media/project-background.eb5947c6.png"
+}
