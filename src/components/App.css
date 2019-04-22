@@ -1,0 +1,44 @@
+.section-title {
+    font-weight: 500;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  
+}
+.section-title.green-underline:after {
+    content: ' ';
+    border: 0.3rem solid #21ce99;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1em;
+}
+.section-title.purple-underline:after {
+    content: ' ';
+    border: 0.3rem solid #836EEF;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1em;
+}
+.section-title.blue-underline:after {
+    content: ' ';
+    border: 0.3rem solid #196DEA;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1em;
+}
+
+.green {
+    color: #21ce99;
+}
+
+.purple {
+    color: #836EEF;
+}
+.blue {
+    color: #196DEA;
+}

@@ -1,0 +1,63 @@
+a {
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+.project-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project-link {
+    margin-right: 20px;
+    margin-top: 20px;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+      0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    letter-spacing: 0.025em;
+    transition: all 0.15s ease;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-sizing: border-box;
+    color: #fff;
+}
+.project-link.green-background {
+    background-color: #21ce99;
+}
+.project-link.purple-background {
+    background-color: #836EEF;
+}
+.project-link.blue-background {
+    background-color: #196DEA;
+}
+.project-link:hover {
+    /* background: blue; */
+            transform: translateY(-1px);
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+              0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.project-link.secondary.green-font {
+    background: #fff;
+    color: #21ce99;
+}
+.project-link.secondary.purple-font {
+    background: #fff;
+    color: #836EEF;
+}
+.project-link.secondary.blue-font {
+    background: #fff;
+    color: #196DEA;
+}
+.project-link.secondary:hover {
+    background: #fff;
+}
+i.fa-rocket, i.fa-github {
+    font-size: 1.2em;
+}

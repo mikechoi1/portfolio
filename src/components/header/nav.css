@@ -1,0 +1,37 @@
+.navbar {
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.navbar-brand {
+    padding: 0 5px;
+}
+
+.active {
+    padding-bottom: 5%;
+    border-bottom: 2px black solid;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.green-theme {
+    background-color: #21ce99;
+}
+.purple-theme {
+    background-color: #836EEF;
+}
+.blue-theme {
+    background-color: #196DEA;
+}
+.dropdown-item {
+    height: 100px;
+}
+@media only screen and (max-width: 991px) {
+    .nav-item {
+        text-align: right;
+    }
+    .active {
+        padding-bottom: 1%;
+    }
+}

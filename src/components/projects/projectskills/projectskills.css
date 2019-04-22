@@ -1,0 +1,23 @@
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-skill {
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* font-family: 'Camphor', Open Sans, Segoe UI, sans-serif; */
+    font-size: 0.85em;
+    /* color: #5d5d5d; */
+}
+.project-skill.green-border {
+    border: solid 2px #21ce99;
+}
+.project-skill.purple-border {
+    border: solid 2px #836EEF;
+}
+.project-skill.blue-border {
+    border: solid 2px #196DEA;
+}
