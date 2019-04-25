@@ -7,7 +7,7 @@ import './projectcard.css';
 
 class ProjectCard extends React.Component {
     render() {
-        const { image, imageAlt, title, description, skills, links , colorTheme } = this.props;
+        const { image, imageAlt, title, description, skills, launchable, links , colorTheme } = this.props;
         return (
         <div className="project-card">
             <div className="transparent-background">
@@ -18,7 +18,7 @@ class ProjectCard extends React.Component {
             <h3>{title}</h3>
             <p dangerouslySetInnerHTML={{ __html: description }} />
             <ProjectSkills skills={skills} colorTheme={colorTheme}/>
-            <ProjectLinks links={links} colorTheme={colorTheme}/>
+            <ProjectLinks launchable={launchable} links={links} colorTheme={colorTheme}/>
             </div>
         </div>
         );

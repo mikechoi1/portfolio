@@ -7,14 +7,15 @@ class Projects extends React.Component {
     render() {
         const { projects, colorTheme } = this.props;
         return (
-            <section name="projects">
+            <section name="projects" id="projects">
                 <div className="container">
-                    <h1 className={`section-title ${colorTheme}-underline`} >Projects</h1>
+                    <h1 className={`section-title ${colorTheme}-underline`}>Projects</h1>
                     {projects.map(proj => (
                         <ProjectCard
                             title={proj.title}
                             description={proj.description}
                             skills={proj.skills}
+                            launchable={proj.launchable}
                             links={proj.links}
                             image={proj.image}
                             key={proj.title}

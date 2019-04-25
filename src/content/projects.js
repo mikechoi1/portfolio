@@ -1,5 +1,6 @@
-import nailpalace from '../images/nailpalace.png';
-import image from '../images/flower.jpeg';
+import nailPalace from '../images/nailpalace.png';
+import slidingPuzzleAI from '../images/sliding-puzzle-ai.png';
+import nQueenProblemAI from '../images/n-queen-problem-ai.png';
 import cat from '../images/cat.png';
 
 export default [
@@ -7,7 +8,7 @@ export default [
         title: 'Nail Salon Website',
         description: 'Overhauled a nail salon\'s website with a completely new design and layout. It features a single page content layout with sections scrollable to with the navbar, and maintains a responsive design in all viewports.',
         skills: ['HTML5','CSS3','JavaScript','ES6','ReactJS', 'S3', 'Route 53', 'Cloudfront'],
-        image: nailpalace,
+        image: nailPalace,
         imageAlt: 'flower picture',
         launchable: true,
         links: {
@@ -16,39 +17,25 @@ export default [
         }
     },
     {
-        title: 'title',
-        description: 'description',
-        skills: ['skill', 'skill2', 'skill3'],
-        image: image,
-        imageAlt: 'flower picture',
-        launchable: true,
+        title: 'Sliding Puzzle AI',
+        description: 'This is an AI built using the A* search algorithm to solve the tricky sliding puzzle in the shortest number of moves possible. If the initial mixed-up state is solvable, the program will give the best solution',
+        skills: ['Java'],
+        image: slidingPuzzleAI,
+        imageAlt: 'example of sliding puzzle program',
+        launchable: false,
         links: {
-            launch: 'https://www.nailpalacescv.com',
-            github: 'https://www.github.com/mikechoi1'
+            github: 'https://github.com/mikechoi1/sliding-puzzle-ai'
         }
     },
     {
-        title: 'my dog',
-        description: 'this my dog',
-        skills: ['sit', 'paw', 'good boy', 'play dead', 'wait'],
-        image: "https://images.unsplash.com/photo-1553531384-411a247ccd73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+        title: 'N Queen Problem AI',
+        description: 'This is an AI built using simulated annealing and genetic algorithm to solve the N Queen Problem. The N Queen Problem is the question of how n queens can be arranged on a nxn chessboard such that none of the queens are attacking any other queen and this ai is what finds the solution to that problem.',
+        skills: ['Java'],
+        image: nQueenProblemAI,
         imageAlt: 'dog picture',
         launchable: false,
         links: {
-            launch: 'https://www.nailpalacescv.com',
-            github: 'https://www.github.com/mikechoi1'
-        }
-    },
-    {
-        title: 'cat drawing ai',
-        description: 'Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.',
-        skills: ['Java', 'Javascript', 'C#', 'C++', 'Node.js', 'Express', 'other', 'technology'],
-        image: cat,
-        imageAlt: 'cat picture',
-        launchable: false,
-        links: {
-            launch: 'https://www.nailpalacescv.com',
-            github: 'https://www.github.com/mikechoi1'
+            github: 'https://github.com/mikechoi1/n-queen-problem-ai'
         }
     }
 ]

@@ -1,0 +1,6 @@
+/* Because the child element (project card) creates a
+   margin on the bottom outside of the parent div, this
+   forces the child margin to be inside the parent div */
+#projects {
+    display: inline-block;
+}

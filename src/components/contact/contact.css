@@ -1,0 +1,30 @@
+.contact-space {
+    width: 40%;
+    margin: 0 auto;
+}
+i.fa-linkedin, i.fa-github-square {
+    margin: 0;
+    font-size: 3em;
+}
+i.fa-paper-plane {
+    font-size: 1.8em;
+}
+i.fa-paper-plane:hover {
+    transform: translateY(-1px);
+    color: black;
+}
+.height-spacing {
+    line-height: 150px;
+}
+.social-media {
+    padding: 0;
+}
+.social-media:hover {
+    color: black;
+}
+/* project-link classname in projectlinks.css file */
+@media only screen and (min-width: 768px) {
+    .contact-space {
+        width: 20%;
+    }
+}

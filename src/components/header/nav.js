@@ -19,13 +19,13 @@ export default class Nav extends React.Component {
     };
 
     hero = document.querySelector(".hero");
-    nav = document.querySelector(".navbar");
+    nav = document.querySelector(".navbar-brand");
 
     componentDidMount() {
         this.hero = document.querySelector(".hero");
-        this.nav = document.querySelector(".navbar");
+        this.nav = document.querySelector(".navbar-brand");
         window.addEventListener('scroll', () => {
-            if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 3) {
+            if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 5) {
                 this.setState({color: this.hexColors[this.propColor], brandColor: 'white'});
             }
             else {
@@ -34,34 +34,28 @@ export default class Nav extends React.Component {
         })
     }
 
-    greenTheme = () => {
-        this.propColor = 'green';
-        if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 3) {
+    navbarColor = () => {
+        if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 5) {
             this.setState({color: this.hexColors[this.propColor]})
         }
         else {
             this.setState({brandColor: this.hexColors[this.propColor]});
         }
+    }
+
+    greenTheme = () => {
+        this.propColor = 'green';
+        this.navbarColor();
         this.props.green();
     }
     purpleTheme = () => {
         this.propColor = 'purple';
-        if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 3) {
-            this.setState({color: this.hexColors[this.propColor]})
-        }
-        else {
-            this.setState({brandColor: this.hexColors[this.propColor]});
-        }
+        this.navbarColor();
         this.props.purple();
     }
     blueTheme = () => {
         this.propColor = 'blue';
-        if(window.scrollY > this.hero.clientHeight - this.nav.clientHeight * 3) {
-            this.setState({color: this.hexColors[this.propColor]})
-        }
-        else {
-            this.setState({brandColor: this.hexColors[this.propColor]});
-        }
+        this.navbarColor();
         this.props.blue();
     }
     

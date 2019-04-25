@@ -43,9 +43,8 @@ class Home extends React.Component {
         return this.roles
             .filter((role, index) => index === typeIndex)
             .map((role) => {
-                // console.log(role);
                 return (
-                    <Typing className={`${this.props.colorTheme} typing-inline typing-font`} cursorClassName={`${this.props.colorTheme}`} key={role} startDelay={startDelay} onFinishedTyping={() => {this.playNext()}}>
+                    <Typing className={`${this.props.colorTheme} typing-inline typing-font`} cursorClassName={`${this.props.colorTheme}`} speed={30} key={role} startDelay={startDelay} onFinishedTyping={() => {this.playNext()}}>
                         <Typing.Reset count={1} />
                         <span className="self-typed">{role}</span>
                         <Typing.Delay ms={1900} />
@@ -63,7 +62,7 @@ class Home extends React.Component {
                         <h1 className="display-1">
                             <div className={`hero-title ${this.props.colorTheme}`}>
                                 <span>&gt;&nbsp;</span>
-                                <Typing className={`${this.props.colorTheme} typing-inline typing-font`} startDelay={500} cursorClassName={this.props.colorTheme}>
+                                <Typing className={`${this.props.colorTheme} typing-inline typing-font`} startDelay={500} cursorClassName={this.props.colorTheme} speed={30}>
                                     {/* <Typing.Reset count={1}/> */}
                                     <span>Welcome!</span>
                                     <Typing.Delay ms={500} />

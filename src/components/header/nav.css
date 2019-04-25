@@ -25,7 +25,7 @@
     background-color: #196DEA;
 }
 .dropdown-item {
-    height: 100px;
+    height: 50px;
 }
 @media only screen and (max-width: 991px) {
     .nav-item {
@@ -33,5 +33,10 @@
     }
     .active {
         padding-bottom: 1%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .dropdown-item {
+        height: 100px;
     }
 }
